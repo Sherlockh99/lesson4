@@ -1,6 +1,7 @@
 package com.sherlock.baseandroid.lesson4;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
 
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         TextView tvDescriptionLang = findViewById(R.id.textVLang);
         tvDescriptionLang.setTypeface(tf);
         tvDescriptionLang.setText(getText(R.string.descriptionLanguage));
+        AppCompatImageView image = findViewById(R.id.imageView);
+        loadImageFromAsset(image,"android.png");
     }
 
     private void loadImageFromAsset(ImageView image, String fileName){
