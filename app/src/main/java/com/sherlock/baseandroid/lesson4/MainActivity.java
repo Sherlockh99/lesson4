@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
     private void initList() {
         LinearLayout layoutList = findViewById(R.id.layoutList);
         String[] versions = getResources().getStringArray(R.array.version_names);
+
+        //Получить из ресурсов массив указателей на изображения
+        TypedArray imgs = getResources().obtainTypedArray(R.array.version_logos);
+
         // С помощью этого объекта будем надувать элементы, спрятанные в android_item.xml
         LayoutInflater ltInflater = getLayoutInflater();
         for (int i = 0; i < versions.length; i++) {
@@ -39,8 +43,6 @@ public class MainActivity extends AppCompatActivity {
             //Находим в этом элементе TextView
             TextView tv = item.findViewById(R.id.textAndroid);
             tv.setText(version);
-            //Получить из ресурсов массив указателей на изображения
-            TypedArray imgs = getResources().obtainTypedArray(R.array.version_logos);
             //Выбираем по индексу подходящее изображение
             AppCompatImageView imgLogo = item.findViewById(R.id.imageAndroid);
             imgLogo.setImageResource(imgs.getResourceId(i,-1));
