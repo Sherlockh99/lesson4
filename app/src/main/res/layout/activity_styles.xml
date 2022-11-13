@@ -8,7 +8,7 @@
         android:id="@+id/loginName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/MyColorStyle"
+        android:theme="@style/MyColorStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
