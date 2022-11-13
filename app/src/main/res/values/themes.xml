@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
     
-    <style name="MyColorStyle">
+    <style name="MyColorStyle" parent="Theme.Lesson4">
         <item name="android:textSize">@dimen/textSize</item>
         <item name="android:textColor">@color/design_default_color_primary</item>
         <item name="android:layout_marginStart">@dimen/margin</item>
