@@ -12,4 +12,6 @@
     <string name="descriptionNight_mode">Night mode</string>
     <string name="descriptionScreen_format">Screen format</string>
     <string name="descriptionVersion">Version</string>
+    <string name="loginName" translatable="false">login</string>
+    <string name="password" translatable="false">password</string>
 </resources>
