@@ -12,7 +12,7 @@ import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.regex.Pattern;
 
-public class StylesActivity extends BasicActivity {
+public class StylesActivity extends BaseActivity {
 
     //Регулярные выражения позволяют проверить на соответствие шаблону
     //Это имя. Первая буква большая латинская, остальные маленькие латинские
